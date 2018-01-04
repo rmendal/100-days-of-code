@@ -14,24 +14,24 @@ harry_text = os.path.join('/home/rob/git/100-days-of-code/Day-02/tmp', 'harry')
 urllib.request.urlretrieve('http://bit.ly/2EuvyHB', stopwords_file)
 urllib.request.urlretrieve('http://bit.ly/2C6RzuR', harry_text)
 
+
 def get_harry_most_common_word():
-    """open the files, clean the potter text and put it in a string.
-    iterate over both files and find the most used word as well as total it's occurance"""
 
-    #harry_file = open(harry_text).read()
-    stop_file = [words.splitlines() for words in open(stopwords_file).read().split(" ")]
-    harry_read = [words.strip('\'.?\",;:-!') and words.replace('\n', ' ') for words in open(harry_text).read().lower()]
-    harry_cleaned = ''.join(harry_read)
+    #Create single list of words from the stop words file
+    stop_file = [words for words in open(stopwords_file).read()]
+    stop_file = ''.join(stop_file)
+    stop_list = re.findall(r'\w+', stop_file)
 
-#    for words in stop_file:
-#        if words in harry_read:
-#            harry_read.remove()
-#            print(harry_read)
-    print(harry_cleaned)
+    #Create single list of words in Harry Potter text and clean it from non-alnum chars
+    words = [words.strip('\'.?\",;:-!') and words.replace('\n', ' ') for words in open(harry_text).read().lower()]
+    words = ''.join(words)
+    words_list = re.findall(r'\w+', words)
 
+    #Create final single list for potter words not in stop words
+    last_list = [x for x in words_list if x not in stop_list]
 
-    #print(stop_file)
-    #print(harry_read)
+    #Finds the final word and counts it's occurance
+    top_word = Counter(last_list).most_common(1).pop()
+    return (top_word)
 
-
-get_harry_most_common_word()
+print(get_harry_most_common_word())
