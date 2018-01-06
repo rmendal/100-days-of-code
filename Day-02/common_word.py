@@ -18,14 +18,18 @@ urllib.request.urlretrieve('http://bit.ly/2C6RzuR', harry_text)
 def get_harry_most_common_word():
 
     #Create single list of words from the stop words file
-    stop_file = [words for words in open(stopwords_file).read()]
-    stop_file = ''.join(stop_file)
-    stop_list = re.findall(r'\w+', stop_file)
+    with open(stopwords_file) as sf:
+        stop_file = sf.read()
+        stop_file = [words for words in stop_file]
+        stop_file = ''.join(stop_file)
+        stop_list = re.findall(r'\w+', stop_file)
 
     #Create single list of words in Harry Potter text and clean it from non-alnum chars
-    words = [words.strip('\'.?\",;:-!') and words.replace('\n', ' ') for words in open(harry_text).read().lower()]
-    words = ''.join(words)
-    words_list = re.findall(r'\w+', words)
+    with open(harry_text) as hp:
+        words = hp.read().lower()
+        words = [words.strip('\'.?\",;:-!') and words.replace('\n', ' ') for words in words]
+        words = ''.join(words)
+        words_list = re.findall(r'\w+', words)
 
     #Create final single list for potter words not in stop words
     last_list = [x for x in words_list if x not in stop_list]
