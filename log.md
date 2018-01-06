@@ -38,7 +38,7 @@ on a new PyBites challenge, "Query a nested data structure" which involves getti
 **Today's Progress**: Finished the PyBite challenge from yesterday. Having done extensive list comprehensions the previous day helped.
 Today I'm working on another PyBite, "Write a simple property". It took me almost all day but I managed to complete it successfully.
 
-**Thoughts**: This was very difficult as I've never worked with claasses before. This also incorporated a dunder method, the datetime library,
+**Thoughts**: This was very difficult as I've never worked with classes before. This also incorporated a dunder method, the datetime library,
 and property decorators. All new to me but I finished the challenge and learned a lot.
 
 **Links to articles/docs used**:
