@@ -50,3 +50,19 @@ and property decorators. All new to me but I finished the challenge and learned 
 * [Python Tutor](http://www.pythontutor.com/visualize.html#mode=edit) **<- This was a life saver!!!**
 
 **Link to work**: [PyBites: Write a simple property](https://codechalleng.es/bites/19/)
+
+### Day 5: January 6, 2018
+
+
+**Today's Progress**: Updated my Day-02 code to make it more pythonic. Specifically, a better way to open and auto close files using "with". I
+also started work on my first intermediate level PyBite.
+
+**Thoughts**: This was very difficult as I've never worked with claasses before. This also incorporated a dunder method, the datetime library,
+and property decorators. All new to me but I finished the challenge and learned a lot.
+
+**Links to articles/docs used**:
+* [Python Docs: Input and Output](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+* [Python Docs: Random](https://docs.python.org/3/library/random.html#functions-for-sequences)
+* [Python Tutor](http://www.pythontutor.com/visualize.html#mode=edit) **<- This was a life saver!!!**
+
+**Link to work**: [PyBites: Form teams from a group of friends](https://codechalleng.es/bites/17/)
