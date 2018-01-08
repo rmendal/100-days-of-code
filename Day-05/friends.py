@@ -2,41 +2,14 @@
 boolean (default False). Return all possible teams. Hint: if order matters (order_does_matter=True) the number of teams
 would be greater. See the tests for more details. Enjoy :)"""
 
-def friends_teams():
+from itertools import combinations, permutations
 
+friends = 'Bob Dante Julian Martin'.split()
 
-
-
-
-
-
-
-
-
-
-
-
-####### TESTS #######################################################################################################
-"""friends = 'Bob Dante Julian Martin'.split()
-
-
-def test_friends_teams():
-    combos = list(friends_teams(friends, team_size=2, order_does_matter=False))
-    assert len(combos) == 6
-    assert ('Bob', 'Julian') in combos
-    assert ('Julian', 'Bob') not in combos
-
-    combos = list(friends_teams(friends, team_size=2, order_does_matter=True))
-    assert len(combos) == 12
-    assert ('Bob', 'Julian') in combos
-    assert ('Julian', 'Bob') in combos
-
-    combos = list(friends_teams(friends, team_size=3, order_does_matter=False))
-    assert len(combos) == 4
-    assert ('Bob', 'Julian', 'Martin') in combos
-    assert ('Martin', 'Julian', 'Bob') not in combos
-
-    combos = list(friends_teams(friends, team_size=3, order_does_matter=True))
-    assert len(combos) == 24
-    assert ('Bob', 'Julian', 'Martin') in combos
-    assert ('Martin', 'Julian', 'Bob') in combos"""
+def friends_teams(friends, team_size = 2, order_does_matter = False):
+    if order_does_matter == False:
+        combo_false = list(combinations(friends, team_size)) # Order doesn't matter in combinations
+        return combo_false
+    else:
+        combo_true = list(permutations(friends, team_size)) # Order does matter in permutations
+        return combo_true

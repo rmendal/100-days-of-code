@@ -66,3 +66,17 @@ and property decorators. All new to me but I finished the challenge and learned 
 * [Python Tutor](http://www.pythontutor.com/visualize.html#mode=edit) **<- This was a life saver!!!**
 
 **Link to work**: [PyBites: Form teams from a group of friends](https://codechalleng.es/bites/17/)
+
+### Day 6: January 7, 2018
+
+
+**Today's Progress**: Completed the day 5 challenge. Solved it with itertools combination and permutation. Today was more
+relaxed as it's a weekend and tomorrow is my birthday. I could have solved this sooner if I'd have tried.
+
+**Thoughts**: This was easier than some of the beginner bites. It helped when I realized I didn't know the difference between
+a combination and permutation. This was key to solving the problem.
+
+**Links to articles/docs used**:
+[Python Docs: itertools](https://docs.python.org/3/library/itertools.html)
+
+**Link to work**: [PyBites: Form teams from a group of friends](https://codechalleng.es/bites/17/)
