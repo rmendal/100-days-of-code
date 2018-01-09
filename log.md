@@ -80,3 +80,18 @@ a combination and permutation. This was key to solving the problem.
 [Python Docs: itertools](https://docs.python.org/3/library/itertools.html)
 
 **Link to work**: [PyBites: Form teams from a group of friends](https://codechalleng.es/bites/17/)
+
+### Day 7: January 8, 2018
+
+
+**Today's Progress**: Today's challenge is about raising exceptions and value errors.
+
+**Thoughts**: This was more difficult than I anticipated. I first tried to nest multiple 'except' statements in a single try
+but it seems to be easier to make if/elif chain and raise the exceptions within. Also learned to use a math function
+to find out if a variable is a number or not.
+
+**Links to articles/docs used**:
+[Python Docs: math](https://docs.python.org/3/library/math.html)
+[Python Docs: Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
+
+**Link to work**: [PyBites: Practice exceptions](https://codechalleng.es/bites/10/)
