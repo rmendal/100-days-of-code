@@ -91,7 +91,37 @@ but it seems to be easier to make if/elif chain and raise the exceptions within.
 to find out if a variable is a number or not.
 
 **Links to articles/docs used**:
-[Python Docs: math](https://docs.python.org/3/library/math.html)
-[Python Docs: Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
+* [Python Docs: math](https://docs.python.org/3/library/math.html)
+* [Python Docs: Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html)
 
 **Link to work**: [PyBites: Practice exceptions](https://codechalleng.es/bites/10/)
+
+### Day 8: January 9, 2018
+
+
+**Today's Progress**: Learning about collections modules in today's bite.
+
+**Thoughts**: Lack od documentation has hurt my progress. I know I need to combine regular expression methods and
+methods from the collections library too.
+
+**Links to articles/docs used**:
+* [Python Docs: collections](https://docs.python.org/3.6/library/collections.html#collections.Counter.most_common)
+* [Python Docs: Regular expression operations](https://docs.python.org/3/library/re.html)
+
+
+**Link to work**: [PyBites: Top 10 PyBites tags](https://codechalleng.es/bites/4/)
+
+### Day 9: January 10, 2018
+
+
+**Today's Progress**: Work completed on the previous day's problem. Starting work on a new bite of py.
+
+**Thoughts**: The key to yesterday's challenge was understanding what 'TAG_HTML' did.
+
+**Links to articles/docs used**:
+* [Python Docs: collections](https://docs.python.org/3.6/library/collections.html#collections.Counter.most_common)
+* [Python Docs: Regular expression operations](https://docs.python.org/3/library/re.html)
+
+**Link to work**:
+* [PyBites: Top 10 PyBites tags](https://codechalleng.es/bites/4/) <-- completed
+* [PyBites: Word Values](https://codechalleng.es/bites/3/) <--In Progress
