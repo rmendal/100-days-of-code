@@ -125,3 +125,29 @@ methods from the collections library too.
 **Link to work**:
 * [PyBites: Top 10 PyBites tags](https://codechalleng.es/bites/4/) <-- completed
 * [PyBites: Word Values](https://codechalleng.es/bites/3/) <--In Progress
+
+### Day 10: January 11, 2018
+
+
+**Today's Progress**: Learned about looping over dicts and finished the 'Word Values' pybite from yesterday.
+
+**Thoughts**:
+
+**Links to articles/docs used**:
+* [Python Docs: Data Structures](https://docs.python.org/3/tutorial/datastructures.html#looping-techniques)
+
+**Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/3/)
+
+### Day 11: January 11, 2018
+
+
+**Today's Progress**: Figured out the nested loops/conditionals I needed to find the highes score of a word in a
+given list which completed the pybite challenge!
+
+**Thoughts**: The looping in the 3rd function is what took so long. Things have to be done in order for it to work right
+but I figured it out.
+
+**Links to articles/docs used**:
+* [Python Docs: Data Structures](https://docs.python.org/3/tutorial/datastructures.html#looping-techniques)
+
+**Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/3/)
