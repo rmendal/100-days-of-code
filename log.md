@@ -138,7 +138,7 @@ methods from the collections library too.
 
 **Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/3/)
 
-### Day 11: January 11, 2018
+### Day 11: January 12, 2018
 
 
 **Today's Progress**: Figured out the nested loops/conditionals I needed to find the highes score of a word in a
@@ -151,3 +151,73 @@ but I figured it out.
 * [Python Docs: Data Structures](https://docs.python.org/3/tutorial/datastructures.html#looping-techniques)
 
 **Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/3/)
+
+### Day 12: January 13, 2018
+
+
+**Today's Progress**: Busy day so I read the docs on what __init__.py is and what it's used for. These files make python
+treat the directories as containing packages.
+
+**Thoughts**:
+
+**Links to articles/docs used**:
+* [Python Docs: Packages](https://docs.python.org/3/tutorial/modules.html#packages)
+
+**Link to work**:
+
+### Day 13: January 14, 2018
+
+
+**Today's Progress**: Another busy day so I read the first chapter of Grokking Algorithims.
+
+**Thoughts**:
+
+**Links to articles/docs used**:
+* [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms)
+
+**Link to work**:
+
+### Day 14: January 15, 2018
+
+
+**Today's Progress**: Began work on another pybite. This one is about reading in a csv file and extracting data.
+
+**Thoughts**: Never worked with csv files before. This will be a learning experience.
+
+**Links to articles/docs used**:
+* [Python Docs: CSV File Reading and Writing](https://docs.python.org/3/library/csv.html)
+* [Python Docs: Collections: NamedTuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
+* [Python Docs: DefaultDict](https://docs.python.org/3/library/collections.html#collections.defaultdict)
+
+**Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/30/)
+
+### Day 15: January 16, 2018
+
+
+**Today's Progress**: Work continues on PyBite #30
+
+**Thoughts**:
+
+**Links to articles/docs used**:
+* [Python Docs: CSV File Reading and Writing](https://docs.python.org/3/library/csv.html)
+* [Python Docs: Collections: NamedTuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
+* [Python Docs: DefaultDict](https://docs.python.org/3/library/collections.html#collections.defaultdict)
+
+**Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/30/)
+
+### Day 16: January 17, 2018
+
+
+**Today's Progress**: Work continues on PyBite #30. Managed to get the info out of the csv and into a list. Now I need
+to get it into a dict and formatted correctly. This is all brand new to me whereas the previous intermediate challenges
+built on things I had either seen before or were in the beginner challenges. This is both frustrating and interesting.
+
+**Thoughts**: Found another article that helped me understand default dict better. Ordered the book the info came from.
+
+**Links to articles/docs used**:
+* [Python Docs: CSV File Reading and Writing](https://docs.python.org/3/library/csv.html)
+* [Python Docs: Collections: NamedTuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
+* [Python Docs: DefaultDict](https://docs.python.org/3/library/collections.html#collections.defaultdict)
+*[How Does defaultdict work](https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work)
+
+**Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/30/)
