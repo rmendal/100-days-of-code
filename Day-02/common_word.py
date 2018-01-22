@@ -41,4 +41,3 @@ def get_harry_most_common_word():
     top_word = Counter(last_list).most_common(1).pop()
     return (top_word)
 
-print(get_harry_most_common_word())

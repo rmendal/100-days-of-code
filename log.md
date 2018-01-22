@@ -218,6 +218,40 @@ built on things I had either seen before or were in the beginner challenges. Thi
 * [Python Docs: CSV File Reading and Writing](https://docs.python.org/3/library/csv.html)
 * [Python Docs: Collections: NamedTuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
 * [Python Docs: DefaultDict](https://docs.python.org/3/library/collections.html#collections.defaultdict)
+* [How Does defaultdict work](https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work)
+
+**Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/30/)
+
+### Day 17: January 18, 2018
+
+
+**Today's Progress**: Work continues on PyBite #30. Managed to get the info out of the csv and into a list. Now I need
+to get it into a dict and formatted correctly. This is all brand new to me whereas the previous intermediate challenges
+built on things I had either seen before or were in the beginner challenges. This is both frustrating and interesting.
+
+**Thoughts**: Found another article that helped me understand default dict better. Ordered the book the info came from.
+
+**Links to articles/docs used**:
+* [Python Docs: CSV File Reading and Writing](https://docs.python.org/3/library/csv.html)
+* [Python Docs: Collections: NamedTuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
+* [Python Docs: DefaultDict](https://docs.python.org/3/library/collections.html#collections.defaultdict)
+*[How Does defaultdict work](https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work)
+
+**Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/30/)
+
+### Day 18: January 19, 2018
+
+
+**Today's Progress**: Work continues on PyBite #30. Managed to get the info out of the csv and into a list. Now I need
+to get it into a dict and formatted correctly. This is all brand new to me whereas the previous intermediate challenges
+built on things I had either seen before or were in the beginner challenges. This is both frustrating and interesting.
+
+**Thoughts**: Found another article that helped me understand default dict better. Ordered the book the info came from.
+
+**Links to articles/docs used**:
+* [Python Docs: CSV File Reading and Writing](https://docs.python.org/3/library/csv.html)
+* [Python Docs: Collections: NamedTuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
+* [Python Docs: DefaultDict](https://docs.python.org/3/library/collections.html#collections.defaultdict)
 *[How Does defaultdict work](https://stackoverflow.com/questions/5900578/how-does-collections-defaultdict-work)
 
 **Link to work**:[PyBites: Word Values](https://codechalleng.es/bites/30/)

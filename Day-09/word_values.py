@@ -74,7 +74,7 @@ def max_word_value(words=None):
                         max_score = word_score
                         best_word = word
         word_iter += 1
-    return best_word.lower()  # returns the highest scoring word in lowwer case to appease the tests xP
+    return best_word.lower()  # returns the highest scoring word in lower case to appease the tests xP
 
 
 test_words = ('bob', 'julian', 'pybites', 'quit', 'barbeque')
