@@ -342,7 +342,7 @@ Starting work on another bite of py.
 
 **Link to work**:[PyBites: Code Challenge 39 - Calculate the total duration of a course](https://codechalleng.es/bites/39/)
 
-### Day 43 February 12, 2018
+### Day 43 February 13, 2018
 
 
 **Progress**: Finished my password generator. It takes 2 random words in that 236k dictionary, randomly capitalizes letters
@@ -357,3 +357,45 @@ in the word and adds in random chars and numbers then prints out 5 random ones t
 * [GRC: How Big Is Your Haystack?](https://www.grc.com/haystack.htm)
 
 **Link to work**:
+
+### Day 44 February 14, 2018
+
+
+**Progress**: Taking a break from the password gen feature adds to work on a bite of py. This one is about writing a decorator
+to wrap text in one or more html tags.
+
+**Thoughts**: This wasn't easy. Need more experience with them.
+
+**Links to articles/docs used**:
+* [Learning Python Decorators by Example](https://pybit.es/decorators-by-example.html)
+* [How to Write a Decorator with an Optional Argument?](https://pybit.es/decorator-optional-argument.html)
+* [10.2. functools — Higher-order functions and operations on callable objects](https://docs.python.org/3/library/functools.html#functools.wraps)
+* [How to make a chain of function decorators?](https://stackoverflow.com/questions/739654/how-to-make-a-chain-of-function-decorators)
+
+**Link to work**: [Bite 22. Write a decorator with argument](https://codechalleng.es/bites/22/)
+
+### Day 45 February 15, 2018
+
+
+**Progress**: Finished the decorator bite. Subscriptions for pybites opened and I subbed. Started on the beginner ones. This
+is about *args and **kwargs.
+
+**Thoughts**: This one was easy except the formatting is being difficult and failing tests.
+
+**Links to articles/docs used**:
+* [Why does “return list.sort()” return None, not the list?](https://stackoverflow.com/questions/7301110/why-does-return-list-sort-return-none-not-the-list)
+* [How to Sort a List, Tuple or Object (with sorted) in Python](https://www.pythoncentral.io/how-to-sort-a-list-tuple-or-object-with-sorted-in-python/)
+* [Add new keys to a dictionary?](https://stackoverflow.com/questions/1024847/add-new-keys-to-a-dictionary)
+
+**Link to work**: [Bite 36. Having fun with *args and **kwargs+](https://codechalleng.es/bites/36/)
+
+### Day 46 February 16, 2018
+
+
+**Progress**: Figured out the output formatting of the args/kwargs problem. Starting on a new bite about dict comprehensions.
+
+**Thoughts**:
+
+**Links to articles/docs used**:
+
+**Link to work**: [Bite 26. Dictionary comprehensions are awesome](https://codechalleng.es/bites/26/)
