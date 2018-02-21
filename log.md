@@ -389,13 +389,13 @@ is about *args and **kwargs.
 
 **Link to work**: [Bite 36. Having fun with *args and **kwargs+](https://codechalleng.es/bites/36/)
 
-### Day 46 February 16, 2018
+### Day 46-47 February 16-20, 2018
 
 
 **Progress**: Figured out the output formatting of the args/kwargs problem. Starting on a new bite about dict comprehensions.
 
-**Thoughts**:
+**Thoughts**: Not much different than list comprehensions.
 
-**Links to articles/docs used**:
+**Links to articles/docs used**:[5. Data Structures](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 **Link to work**: [Bite 26. Dictionary comprehensions are awesome](https://codechalleng.es/bites/26/)
