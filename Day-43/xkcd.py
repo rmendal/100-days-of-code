@@ -1,7 +1,11 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from string import punctuation, digits
 from random import choices, choice
+import argparse
+
+#parser = argparse.ArgumentParser(description='Generate secure passwords.')
+
 
 chars = punctuation #pulls characters from string lib
 nums = digits #pulls numbers from string library
