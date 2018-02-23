@@ -399,3 +399,28 @@ is about *args and **kwargs.
 **Links to articles/docs used**:[5. Data Structures](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
 
 **Link to work**: [Bite 26. Dictionary comprehensions are awesome](https://codechalleng.es/bites/26/)
+
+### Day 48 February 22, 2018
+
+
+**Progress**: Started and finished another bite of py.
+
+**Thoughts**: Called for making a license key generator. Had experience with this sort of thing since I made the password gen. Wasn't too hard.
+
+**Links to articles/docs used**:[15.3. secrets — Generate secure random numbers for managing secrets](https://docs.python.org/3/library/secrets.html)
+
+**Link to work**: [Bite 44. License key generator](https://codechalleng.es/bites/44/)
+
+### Day 49 February 23, 2018
+
+
+**Progress**: Finished bite 43 which I started yesterday and dealt with function kwargs.
+
+**Thoughts**: This seemed too simple and it was. I didn't understand fully the implication in the instructions that you need to force the kwargs.
+This is accomplished by adding an asterisk in front of the kwargs in the function definition. e.g. def some_func(*, name='bill', age='32'). This
+means that if a function call is made with just one kwarg (e.g. some_func(name='ted')) the call will throw an error despite a default value in place.
+Oddly, I couldn't find any actual documentation on this practice other than it's new in Python3 and the stack overflow article below.
+
+**Links to articles/docs used**:[Forced naming of parameters in Python](https://stackoverflow.com/questions/2965271/forced-naming-of-parameters-in-python)
+
+**Link to work**: [Bite 43. Force keyword arguments](https://codechalleng.es/bites/43/)
