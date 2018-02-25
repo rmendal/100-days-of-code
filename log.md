@@ -424,3 +424,15 @@ Oddly, I couldn't find any actual documentation on this practice other than it's
 **Links to articles/docs used**:[Forced naming of parameters in Python](https://stackoverflow.com/questions/2965271/forced-naming-of-parameters-in-python)
 
 **Link to work**: [Bite 43. Force keyword arguments](https://codechalleng.es/bites/43/)
+
+### Day 50 February 23, 2018
+
+
+**Progress**: Finished bite 15 I'd started yesterday. Issue was figuring out how to nest both enumerate and zip into a single for loop.
+
+**Thoughts**: Once I found the link below it was easy to see how to nest the multiple methods. Zip is handy and I'll use it in the
+future no doubt.
+
+**Links to articles/docs used**:[How to use Python's enumerate and zip to iterate over two lists and their indices.](https://www.saltycrane.com/blog/2008/04/how-to-use-pythons-enumerate-and-zip-to/#enumerate-with-zip)
+
+**Link to work**: [Bite 15. Enumerate two sequences](https://codechalleng.es/bites/15/)
