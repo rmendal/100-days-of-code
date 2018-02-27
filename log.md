@@ -425,7 +425,7 @@ Oddly, I couldn't find any actual documentation on this practice other than it's
 
 **Link to work**: [Bite 43. Force keyword arguments](https://codechalleng.es/bites/43/)
 
-### Day 50 February 23, 2018
+### Day 50 February 25, 2018
 
 
 **Progress**: Finished bite 15 I'd started yesterday. Issue was figuring out how to nest both enumerate and zip into a single for loop.
@@ -436,3 +436,14 @@ future no doubt.
 **Links to articles/docs used**:[How to use Python's enumerate and zip to iterate over two lists and their indices.](https://www.saltycrane.com/blog/2008/04/how-to-use-pythons-enumerate-and-zip-to/#enumerate-with-zip)
 
 **Link to work**: [Bite 15. Enumerate two sequences](https://codechalleng.es/bites/15/)
+
+### Day 51 February 26, 2018
+
+
+**Progress**: Finished the bite regarding date times. Picked a new bite to work on.
+
+**Thoughts**: This wasn't terribly hard once I figured out how to iterate and add time together.
+
+**Links to articles/docs used**:[8.1. datetime — Basic date and time types](https://docs.python.org/3/library/datetime.html#timedelta-objects)
+
+**Link to work**: [Bite 16. Special PyBites date generator](https://codechalleng.es/bites/16/)
