@@ -447,3 +447,52 @@ future no doubt.
 **Links to articles/docs used**:[8.1. datetime — Basic date and time types](https://docs.python.org/3/library/datetime.html#timedelta-objects)
 
 **Link to work**: [Bite 16. Special PyBites date generator](https://codechalleng.es/bites/16/)
+
+### Day 52 February 27, 2018
+
+
+**Progress**: Worked on a new bite of py. Made some progress. Looking for patterns in an "IQ test".
+
+**Thoughts**: This seems to encompass enumerate as well as zip. Maybe index() but that's not ideal for iteration. I feel like this
+could use list comprehensions but I'm not sure how to do it.
+
+**Links to articles/docs used**:
+* [Python List index() Method](https://www.tutorialspoint.com/python/list_index.htm)
+* [Finding the index of an item given a list containing it in Python](https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-given-a-list-containing-it-in-python)
+* [ValueError: substring not found, What am i doing wrong?](https://stackoverflow.com/questions/22747092/valueerror-substring-not-found-what-am-i-doing-wrong)
+* [Accessing the index in Python 'for' loops](https://stackoverflow.com/questions/522563/accessing-the-index-in-python-for-loops)
+
+**Link to work**: [Bite 29. Martin's IQ test](https://codechalleng.es/bites/29/)
+
+### Day 53 February 28th, 2018
+
+
+**Progress**: More work on the IQ test bite of py. Still struggling
+
+**Thoughts**: I can't figure out how I'm supposed to search a list to see how many of a specific object exist in it. I've looked at list, index and other
+stuff encompassing strings and lsts. Getting frustrated.
+
+**Links to articles/docs used**:
+* [Python List index() Method](https://www.tutorialspoint.com/python/list_index.htm)
+* [Finding the index of an item given a list containing it in Python](https://stackoverflow.com/questions/176918/finding-the-index-of-an-item-given-a-list-containing-it-in-python)
+* [ValueError: substring not found, What am i doing wrong?](https://stackoverflow.com/questions/22747092/valueerror-substring-not-found-what-am-i-doing-wrong)
+* [Accessing the index in Python 'for' loops](https://stackoverflow.com/questions/522563/accessing-the-index-in-python-for-loops)
+
+**Link to work**: [Bite 29. Martin's IQ test](https://codechalleng.es/bites/29/)
+
+### Day 54 March 2, 2018
+
+
+**Progress**: Gave up on the IQ test bite of py and started a new one about mutability.
+
+**Thoughts**: I hate admitting defeat but I was at a roadblock and just as I assumed with my day 53 tweet I was overthinking the problem and thus
+was all wrong in my line of thinking for a solution. I had some aspects right like importing the string library for ascii.letters and digits but completely
+wrong in needing a list for chars then trying to essentially search 3 lists and some how determine if the list passed to the function was composed
+primarily of chars or alpha-numeric characters. Total waste of time. Solution involved just using a list of alphanumeric characters, which I had, and
+running that against the list given to the func which you enumerate to find the indicies, for each match it finds add the enumerated index number to an empty list.
+If it has no matches in the alpha-numeric list then append(i) to a different empty list, meaning it's a list comprised mostly of special chars.If in
+the end, the first list you appended is == 1 return that index else return the other list index.
+
+**Links to articles/docs used**: []()
+
+**Link to work**: [Bite 32. Don't let mutability fool you](https://codechalleng.es/bites/32/)
