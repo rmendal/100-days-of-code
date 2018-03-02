@@ -483,7 +483,7 @@ stuff encompassing strings and lsts. Getting frustrated.
 ### Day 54 March 2, 2018
 
 
-**Progress**: Gave up on the IQ test bite of py and started a new one about mutability.
+**Progress**: Gave up on the IQ test bite of py and started a new one about mutability and finished that.
 
 **Thoughts**: I hate admitting defeat but I was at a roadblock and just as I assumed with my day 53 tweet I was overthinking the problem and thus
 was all wrong in my line of thinking for a solution. I had some aspects right like importing the string library for ascii.letters and digits but completely
@@ -493,6 +493,9 @@ running that against the list given to the func which you enumerate to find the 
 If it has no matches in the alpha-numeric list then append(i) to a different empty list, meaning it's a list comprised mostly of special chars.If in
 the end, the first list you appended is == 1 return that index else return the other list index.
 
-**Links to articles/docs used**: []()
+As for the mutability bite. This one was obviously easier due to realizing the list wasn't being copied correctly. A quick search
+of the python docs showed me deepcopy which offers a true copy rather than a reference pointer.
+
+**Links to articles/docs used**: [8.10. copy — Shallow and deep copy operations](https://docs.python.org/3/library/copy.html)
 
 **Link to work**: [Bite 32. Don't let mutability fool you](https://codechalleng.es/bites/32/)
