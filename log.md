@@ -499,3 +499,26 @@ of the python docs showed me deepcopy which offers a true copy rather than a ref
 **Links to articles/docs used**: [8.10. copy — Shallow and deep copy operations](https://docs.python.org/3/library/copy.html)
 
 **Link to work**: [Bite 32. Don't let mutability fool you](https://codechalleng.es/bites/32/)
+
+### Day 55 March 3, 2018
+
+
+**Progress**: Read the first chapter in my new book that arrived. [Effective Python: 59 Specific Ways to Write Better Code](http://a.co/4kkgJ5A)
+
+**Thoughts**: Great book. Lots of easy to implement best practices I can't wait to start making habits.
+
+**Links to articles/docs used**:
+
+**Link to work**:
+
+### Day 56 March 5, 2018
+
+
+**Progress**: Completed the recursion bite of py. Started a new one called for parsing an XML file.
+
+**Thoughts**: No real progress on the XML file bite but the main issue with my recursion file was the placement of my print statement.
+
+**Links to articles/docs used**: [recursion, Python, countup, countdown
+](https://stackoverflow.com/questions/46201436/recursion-python-countup-countdown)
+
+**Link to work**: [Bite 37. Rewrite a for loop using recursion](https://codechalleng.es/bites/37/)
