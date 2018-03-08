@@ -536,11 +536,11 @@ of the python docs showed me deepcopy which offers a true copy rather than a ref
 ### Day 57 March 8, 2018
 
 
-**Progress**: Started a bite of py about creating a queue.
+**Progress**: Started/Finished a bite of py about creating a queue. Also did a second bite about FizzBuzz problem solving.
 
 **Thoughts**: I first checked the Queue library but that didn't seem to fit given the init main section of the problem. Some cursory
 googling found me the Dan Bader article linked below which is how I found dequeue, which is a part of collections. After that it wasn't
-too hard to make the solution.
+too hard to make the solution. FizzBuzz was an easy problem to solve using if/elif/else and modulo.
 
 **Links to articles/docs used**:
 * [8.3. collections — Container datatypes](https://docs.python.org/3/library/collections.html#deque-objects)
@@ -548,4 +548,6 @@ too hard to make the solution.
 * [How to use Queue: A beginner’s guide](https://www.pythoncentral.io/use-queue-beginners-guide/)
 * [deque — Double-Ended Queue](https://pymotw.com/3/collections/deque.html)
 
-**Link to work**: [Bite 45. Keep a queue of last n items](https://codechalleng.es/bites/45/)
+**Link to work**:
+* [Bite 45. Keep a queue of last n items](https://codechalleng.es/bites/45/)
+* [Bite 46. You are a programmer! Code Fizz Buzz](https://codechalleng.es/bites/46/)
