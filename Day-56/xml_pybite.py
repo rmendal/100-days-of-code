@@ -20,15 +20,45 @@ xmlstring = '''<?xml version="1.0" encoding="UTF-8"?>
 
 def get_tree():
     """You probably want to use ET.fromstring"""
-    pass
-
+    #Works
+    tree = ET.ElementTree(ET.fromstring(xmlstring))  # prepend ET.ElementTree returns the correct type for the test
+    return tree
 
 def get_movies():
     """Call get_tree and retrieve all movie titles, return a list or generator"""
-    pass
+    tree = get_tree()
+    for m in tree.iter(tag='movie'):
+        yield m.attrib['title']
+
+def _get_runtime(movie):
+    """Helper function to extract the minutes (int) from the runtime movie attribute"""
+    return int(movie.attrib['runtime'].rstrip(' min'))
 
 
 def get_movie_longest_runtime():
     """Call get_tree again and return the movie with the longest runtime in minutes,
        for latter consider adding a _get_runtime helper"""
-    pass
+    tree = get_tree()
+    movies = [(movie.attrib['title'], _get_runtime(movie))
+              for movie in tree.iter(tag='movie')]
+    max_movie, max_runtime = max(movies, key=lambda m: m[1])
+    return max_movie
+
+
+##########################################
+def test_get_tree():
+    tree = get_tree()
+    assert type(tree) == ET.ElementTree
+    assert len(list(tree.iter(tag='movie'))) == 5
+
+
+def test_get_movies():
+    assert list(get_movies()) == ['The Prestige', 'The Dark Knight',
+                                  'The Dark Knight Rises', 'Dunkirk',
+                                  'Interstellar']
+
+
+def test_get_movie_longest_runtime():
+    assert get_movie_longest_runtime() == 'Interstellar'
+
+print(test_get_movies())

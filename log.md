@@ -518,7 +518,34 @@ of the python docs showed me deepcopy which offers a true copy rather than a ref
 
 **Thoughts**: No real progress on the XML file bite but the main issue with my recursion file was the placement of my print statement.
 
-**Links to articles/docs used**: [recursion, Python, countup, countdown
-](https://stackoverflow.com/questions/46201436/recursion-python-countup-countdown)
+**Links to articles/docs used**: [recursion, Python, countup, countdown](https://stackoverflow.com/questions/46201436/recursion-python-countup-countdown)
 
 **Link to work**: [Bite 37. Rewrite a for loop using recursion](https://codechalleng.es/bites/37/)
+
+### Day 56 continued March 7, 2018
+
+
+**Progress**: Failed this one. Learned how to do it properly though and made notes in the files
+
+**Thoughts**: The docs for this weren't real clear and caused issues for my understanding.
+
+**Links to articles/docs used**: [20.5. xml.etree.ElementTree — The ElementTree XML API](https://docs.python.org/3/library/xml.etree.elementtree.html)
+
+**Link to work**: [Bite 38. Using ElementTree to parse XML](https://codechalleng.es/bites/38/)
+
+### Day 57 March 8, 2018
+
+
+**Progress**: Started a bite of py about creating a queue.
+
+**Thoughts**: I first checked the Queue library but that didn't seem to fit given the init main section of the problem. Some cursory
+googling found me the Dan Bader article linked below which is how I found dequeue, which is a part of collections. After that it wasn't
+too hard to make the solution.
+
+**Links to articles/docs used**:
+* [8.3. collections — Container datatypes](https://docs.python.org/3/library/collections.html#deque-objects)
+* [Queues in Python](https://dbader.org/blog/queues-in-python)
+* [How to use Queue: A beginner’s guide](https://www.pythoncentral.io/use-queue-beginners-guide/)
+* [deque — Double-Ended Queue](https://pymotw.com/3/collections/deque.html)
+
+**Link to work**: [Bite 45. Keep a queue of last n items](https://codechalleng.es/bites/45/)
