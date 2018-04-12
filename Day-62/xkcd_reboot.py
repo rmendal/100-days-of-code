@@ -18,7 +18,7 @@ def pwd_gen(pwd_num, *args):
     '''Generates passwords based on the rules below. Then passes the list to the hash check func. It then receives the
     list back which will either be the same or shorter if the hash was found in the hash file.
 
-    If the list comes back less than the original length new passwords need to be generated/checked to meet the list
+    If the list comes back less than the original length new passwords need to be generated/checked to meet the user
     requirement. Repeat this process until the list is the requested length and meets the hash check requirements.'''
     if len(args) > 0:
         pass
@@ -67,14 +67,14 @@ def hash_check(pwd_list, pwd_list_len):
             pwd_list.remove(v)
         else:
             with open('hash.txt', 'a') as h:
-                h.write(k + '\r')
+                h.write(k + '\n')
 
-    #TODO: Return the pwd list, in whole or in part to the pwd_gen func
+    #Return the pwd list, in whole or in part to the pwd_gen func
     if pwd_list_len < len(pwd_list):
         pwd_gen(len(pwd_list), pwd_list)
     else:
-        pwd_list = ''.join(pwd_list)
-        return print(pwd_list, '\r')
+        pwd_list = '\n'.join(pwd_list)
+        return print(pwd_list)
 
 if __name__=="__main__":
     pwds = int(input('How many passwords would you like to generate? '))
