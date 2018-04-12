@@ -551,3 +551,17 @@ too hard to make the solution. FizzBuzz was an easy problem to solve using if/el
 **Link to work**:
 * [Bite 45. Keep a queue of last n items](https://codechalleng.es/bites/45/)
 * [Bite 46. You are a programmer! Code Fizz Buzz](https://codechalleng.es/bites/46/)
+
+### Day 58 March 10, 2018
+
+
+**Progress**: Started new bite of py for finding the person who pr'd the most and what the most popular challenge is.
+
+**Thoughts**:
+
+**Links to articles/docs used**:
+* [7.2.1. Methods of File Objects](https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects)
+* [What does the “yield” keyword do?](https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do)
+* [Difference between Python's Generators and Iterators](https://stackoverflow.com/questions/2776829/difference-between-pythons-generators-and-iterators)
+
+**Link to work**: [Bite 6. PyBites Die Hard](https://codechalleng.es/bites/6/)
