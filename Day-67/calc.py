@@ -9,6 +9,7 @@ $ python calculator.py --div 8 5 7
 0.23
 
 https://stackoverflow.com/questions/13840379/how-can-i-multiply-all-items-in-a-list-together-with-python
+https://www.reddit.com/r/learnpython/comments/1br6u6/how_do_i_pass_arguments_to_a_py_script_in_pycharm/
 '''
 
 import argparse
@@ -20,18 +21,20 @@ def calculator(operation, numbers):
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals
        check out the math library for easier versions of these"""
-    numbers = list(numbers)
-    if operation in ['-a', '--add']:
-        return round(sum(numbers), 2)
+    numbers = [float(i) for i in numbers]  # numbers comes in as a list of strings, convert to floats
 
-    elif operation in ['-s', '--sub']:
-        return round(reduce(lambda x, y: x - y, numbers), 2)
+    # operation comes in without the leading hyphen(s) so omit those when iterating over the list
+    if operation in ['a', 'add']:
+        return round(reduce(lambda x, y: (x + y), numbers), 2)
 
-    elif operation in ['-m', '--mul']:
-        return round(reduce(lambda x, y: x * y, numbers), 2)
+    elif operation in ['s', 'sub']:
+        return round(reduce(lambda x, y: (x - y), numbers), 2)
 
-    elif operation in ['-d', '--div']:
-        return round(reduce(lambda x, y: x / y, numbers), 2)
+    elif operation in ['m', 'mul']:
+        return round(reduce(lambda x, y: (x * y), numbers), 2)
+
+    elif operation in ['d', 'div']:
+        return round(reduce(lambda x, y: (x / y), numbers), 2)
 
 
 def create_parser():
@@ -41,10 +44,10 @@ def create_parser():
        - have one or more integers that can be operated on.
        Returns a argparse.ArgumentParser object"""
     parser = argparse.ArgumentParser(description='A simple calculator')
-    parser.add_argument("-a", "--add", help="Sums numbers", type=int, nargs='+')
-    parser.add_argument("-s", "--sub", help="Subtracts numbers", type=int, nargs='+')
-    parser.add_argument("-m", "--mul", help="Multiplies numbers", type=int, nargs='+')
-    parser.add_argument("-d", "--div", help="Divides numbers", type=int, nargs='+')
+    parser.add_argument("-a", "--add", help="Sums numbers", nargs='+')
+    parser.add_argument("-s", "--sub", help="Subtracts numbers", nargs='+')
+    parser.add_argument("-m", "--mul", help="Multiplies numbers", nargs='+')
+    parser.add_argument("-d", "--div", help="Divides numbers", nargs='+')
     return parser
 
 
@@ -66,6 +69,7 @@ def call_calculator(args=None, stdout=False):
 
         try:
             res = calculator(operation, numbers)
+
         except ZeroDivisionError:
             res = 0
 
