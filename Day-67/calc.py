@@ -1,22 +1,4 @@
 '''
-$ python calculator.py -h
-usage: calculator.py [-h] [-a ADD [ADD ...]] [-s SUB [SUB ...]]
-                     [-m MUL [MUL ...]] [-d DIV [DIV ...]]
-
-A simple calculator
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -a ADD [ADD ...], --add ADD [ADD ...]
-                        Sums numbers
-  -s SUB [SUB ...], --sub SUB [SUB ...]
-                        Subtracts numbers
-  -m MUL [MUL ...], --mul MUL [MUL ...]
-                        Multiplies numbers
-  -d DIV [DIV ...], --div DIV [DIV ...]
-                        Divides numbers
-
-
 $ python calculator.py --add 1 2 3
 6.0
 $ python calculator.py --sub 10 6 2
@@ -25,23 +7,31 @@ $ python calculator.py --mul 3 3 3
 27.0
 $ python calculator.py --div 8 5 7
 0.23
+
+https://stackoverflow.com/questions/13840379/how-can-i-multiply-all-items-in-a-list-together-with-python
 '''
 
 import argparse
+from functools import reduce
+
 
 def calculator(operation, numbers):
     """TODO 1:
        Create a calculator that takes an operation and list of numbers.
        Perform the operation returning the result rounded to 2 decimals
        check out the math library for easier versions of these"""
-    if operation == '-a' or '--add':
-        #TODO add function
-    elif operation == '-s' or '--sub':
-        #TODO sub function
-    elif operation == '-m' or '--mul':
-        #TODO mul function
-    elif operation == '-d' or '--div':
-        #TODO div function
+    numbers = list(numbers)
+    if operation in ['-a', '--add']:
+        return round(sum(numbers), 2)
+
+    elif operation in ['-s', '--sub']:
+        return round(reduce(lambda x, y: x - y, numbers), 2)
+
+    elif operation in ['-m', '--mul']:
+        return round(reduce(lambda x, y: x * y, numbers), 2)
+
+    elif operation in ['-d', '--div']:
+        return round(reduce(lambda x, y: x / y, numbers), 2)
 
 
 def create_parser():
@@ -51,10 +41,10 @@ def create_parser():
        - have one or more integers that can be operated on.
        Returns a argparse.ArgumentParser object"""
     parser = argparse.ArgumentParser(description='A simple calculator')
-    parser.add_argument("-a", "--add", help="Sums numbers", type=int, required=True)
-    parser.add_argument("-s", "--sub", help="Subtracts numbers", type=int, required=True)
-    parser.add_argument("-m", "--mul", help="Multiplies numbers", type=int, required=True)
-    parser.add_argument("-d", "--div", help="Divides numbers", type=int, required=True)
+    parser.add_argument("-a", "--add", help="Sums numbers", type=int, nargs='+')
+    parser.add_argument("-s", "--sub", help="Subtracts numbers", type=int, nargs='+')
+    parser.add_argument("-m", "--mul", help="Multiplies numbers", type=int, nargs='+')
+    parser.add_argument("-d", "--div", help="Divides numbers", type=int, nargs='+')
     return parser
 
 
