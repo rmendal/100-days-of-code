@@ -2,12 +2,12 @@
 import datetime as dt
 from time import sleep
 
-
 # 3rd Party Packages
 import pandas as pd
 import numpy as np
 import tulipy as ti
-
+import requests as re
+import pytz
 
 # Oanda Package Imports
 from oandapyV20 import API
